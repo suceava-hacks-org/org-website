@@ -2,11 +2,15 @@
 
 import { useEffect, useRef } from 'react';
 import Script from 'next/script';
+
 declare global {
   interface Window {
-    VANTA: any;
+    VANTA?: {
+      GLOBE: (options: Record<string, unknown>) => void;
+    };
   }
 }
+
 export default function VantaBackground() {
   const myRef = useRef(null);
 
