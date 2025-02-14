@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {Providers} from "../app/providers";
+import MouseEffect from "./components/MouseEffect";
 
 export const metadata: Metadata = {
   title: "Hack Club CNPRSV",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`antialiased`}>
         <Providers>
+          <MouseEffect />
           {children}
         </Providers>
       </body>

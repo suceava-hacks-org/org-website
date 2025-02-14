@@ -28,8 +28,7 @@ export default function NavbarHome() {
     return (
         <Navbar 
             onMenuOpenChange={setIsMenuOpen}
-            isBlurred
-            isBordered
+            className="sticky top-0 z-50 bg-transparent backdrop-blur-sm"
         >
             <NavbarContent justify="start">
                 <NavbarBrand>
@@ -54,7 +53,7 @@ export default function NavbarHome() {
             <NavbarMenu>
                 {menuItems.map((item) => (
                     <NavbarMenuItem key={item.title}>
-                        <Link href={item.href}>
+                        <Link href={item.href} className="hover:underline">
                             {item.title}
                         </Link>
                     </NavbarMenuItem>
