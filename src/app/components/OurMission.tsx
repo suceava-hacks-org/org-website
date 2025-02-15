@@ -1,8 +1,8 @@
 export default function OurMission() {
     return (
-        <div className="flex flex-col items-center justify-center h-screen absolute inset-0 z-10 p-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold">Our Mission</h1>
-            <p className="text-lg md:text-2xl text-center mt-2">Hack Club CNPRSV is a community of young makers.</p>
+        <div>
+            <div className="text-4xl font-bold text-center text-white">Our Mission</div>
+            <div className="text-2xl font-bold text-center text-white">To provide a platform for developers to showcase their work and connect with other developers.</div>
         </div>
-    );
+    )
 }
