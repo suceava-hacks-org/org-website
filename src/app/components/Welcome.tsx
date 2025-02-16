@@ -25,7 +25,7 @@ export default function Welcome() {
         }}
         className="text-4xl md:text-6xl font-bold"
       >
-        Welcome to Hack Club CNPRSV
+        Welcome to Hack Club Suceava
       </motion.h1>
 
       <motion.p
@@ -38,7 +38,7 @@ export default function Welcome() {
         }}
         className="text-xl md:text-2xl"
       >
-        Hack Club CNPRSV is a community of young developers who are passionate about technology.
+        Hack Club Suceava is a community of young developers who are passionate about technology.
       </motion.p>
     </div>
   );
