@@ -6,7 +6,10 @@ import Script from 'next/script';
 declare global {
   interface Window {
     VANTA?: {
-      GLOBE: (options: Record<string, unknown>) => void;
+      GLOBE: (options: Record<string, unknown>) => {
+        destroy: () => void;
+        setOptions: (options: Record<string, unknown>) => void;
+      };
     };
   }
 }
