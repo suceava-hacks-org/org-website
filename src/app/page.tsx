@@ -1,7 +1,8 @@
-import NavbarHome from "@/app/components/Navbar";
 import VantaGlobe from "@/app/components/VantaGlobe";
 import Welcome from "./components/Welcome";
 import OurMission from "./components/OurMission";
+
+
 const Grid = () => (
   <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -12,16 +13,15 @@ const Grid = () => (
     <rect width="100%" height="100%" fill="url(#grid)" />
   </svg>
 );
+
 export default function Home() {
   return (
-    <div className="">
-      <div className="relative z-10">
-        <NavbarHome />
-        <VantaGlobe />
-        <Welcome />
-        <OurMission />
-        <Grid />
-      </div>
+
+    <div className="relative z-10">
+      <VantaGlobe />
+      <Welcome />
+      <OurMission />
+      <Grid />
     </div>
   );
 }
