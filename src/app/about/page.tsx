@@ -22,7 +22,7 @@ export default function About() {
                     </p>
                     <div className="absolute -top-10 -right-10 w-64 h-64 bg-red-500/10 rounded-full blur-3xl"></div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
                     <motion.div 
                         className="group relative p-8 bg-gradient-to-br from-[#1a1a1a] to-[#0d0d0d] rounded-2xl border border-red-500/5 hover:border-red-500/20 transition-all duration-300"
@@ -100,7 +100,7 @@ export default function About() {
                     <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
                     <h2 className="text-5xl font-bold mb-6">Ready to <span className="text-red-500">Join Us</span>?</h2>
                     <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                        Whether you're a beginner or an experienced coder, there's a place for you in our community.
+                        Whether you are a beginner or an experienced coder, there is a place for you in our community.
                     </p>
                     <button className="relative bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/20">
                         Join Hack Club

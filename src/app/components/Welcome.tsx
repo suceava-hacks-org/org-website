@@ -25,7 +25,7 @@ export default function Welcome() {
         }}
         className="text-4xl md:text-6xl font-bold"
       >
-        Welcome to Hack Club Suceava
+        Welcome to Suceava Hacks!
       </motion.h1>
 
       <motion.p
@@ -38,7 +38,7 @@ export default function Welcome() {
         }}
         className="text-xl md:text-2xl"
       >
-        Hack Club Suceava is a community of young developers who are passionate about technology.
+        Suceava Hacks is a non-profit organization that aims to ignite the creative potential in every young developer.
       </motion.p>
     </div>
   );

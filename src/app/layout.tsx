@@ -16,8 +16,8 @@ const Grid = () => (
 );
 
 export const metadata: Metadata = {
-  title: "Hack Club SV",
-  description: "Hack Club Suceava is a community of young makers.",
+  title: "Suceava Hacks!",
+  description: "Suceava Hacks is a non-profit organization that aims to help students learn how to code and build projects.",
   icons: ["/icon-rounded.png"],
 };
 
