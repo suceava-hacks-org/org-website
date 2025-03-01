@@ -3,7 +3,7 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 
 export default function OurMission() {
-    const [activeCard, setActiveCard] = useState(null);
+    const [activeCard, setActiveCard] = useState<number | null>(null);
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
     const descriptionRef = useRef(null);
@@ -47,14 +47,6 @@ export default function OurMission() {
         })
     };
 
-    const countUp = (num: string) => {
-        return { 
-            initial: 0,
-            animate: parseInt(num),
-            transition: { duration: 2, ease: "easeOut" }
-        };
-    };
-    
     return (
         <div className="relative overflow-hidden pb-32 pt-24">
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
@@ -190,7 +182,7 @@ export default function OurMission() {
                             becomes a powerful tool for positive change.
                         </p>
                         <p className="text-lg text-gray-400 leading-relaxed mb-16 max-w-3xl mx-auto text-center">
-                            Whether you're just starting your coding journey or looking to level up your skills,
+                            Whether youre just starting your coding journey or looking to level up your skills,
                             our community provides the resources, mentorship, and collaborative opportunities
                             to help you build the future you envision.
                         </p>
@@ -344,11 +336,7 @@ export default function OurMission() {
                                             textShadow: "0px 0px 8px rgba(239, 68, 68, 0.3)",
                                         }}
                                     >
-                                        <motion.span
-                                            {...countUp(stat.number.replace("+", ""))}
-                                        >
-                                            {stat.number.replace("+", "")}
-                                        </motion.span>
+                                        {stat.number.replace("+", "")}
                                         {stat.number.includes("+") && "+"}
                                     </motion.h3>
                                 )}
