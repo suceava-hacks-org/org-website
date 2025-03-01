@@ -203,7 +203,7 @@ export default function Contact() {
                         className="text-xl text-gray-300 max-w-3xl leading-relaxed"
                         variants={childVariant}
                     >
-                        Have a question or want to join Suceava Hacks? We'd love to hear from you!
+                        Have a question or want to join Suceava Hacks? We would love to hear from you!
                         Reach out to us using the form below or connect through any of our social channels.
                     </motion.p>
                 </motion.div>
@@ -248,7 +248,7 @@ export default function Contact() {
                                     <div>
                                         <h3 className="text-xl font-bold text-green-400 mb-2">Message Sent Successfully!</h3>
                                         <p className="text-gray-300">
-                                            Thank you for reaching out. We'll get back to you as soon as possible.
+                                            Thank you for reaching out. We will get back to you as soon as possible.
                                         </p>
                                     </div>
                                 </div>

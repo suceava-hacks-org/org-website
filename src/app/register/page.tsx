@@ -92,6 +92,7 @@ export default function Register() {
         if (isFormInView) {
             formControls.start("visible");
         }
+        setEvents(events);
     }, [isHeaderInView, isFormInView, headerControls, formControls]);
 
     const fadeInUp = {
@@ -273,7 +274,7 @@ export default function Register() {
                         className="text-xl text-gray-300 max-w-2xl mx-auto"
                         variants={fadeInUp}
                     >
-                        Fill out the form below to secure your spot at one of our upcoming events. We can't wait to see you there!
+                        Fill out the form below to secure your spot at one of our upcoming events. We cannot wait to see you there!
                     </motion.p>
                 </motion.div>
                 
@@ -582,7 +583,7 @@ export default function Register() {
                         
                         <h2 className="text-3xl font-bold mb-4 relative z-10">Registration Successful!</h2>
                         <p className="text-gray-300 mb-8 max-w-lg mx-auto relative z-10">
-                            Thank you for registering! We've sent a confirmation email with all the details. We look forward to seeing you at the event.
+                            Thank you for registering! We have sent a confirmation email with all the details. We look forward to seeing you at the event.
                         </p>
                         
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">

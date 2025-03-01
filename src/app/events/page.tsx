@@ -97,7 +97,8 @@ export default function Events() {
         if (isEventsInView) {
             eventsControls.start("visible");
         }
-    }, [isHeaderInView, isEventsInView, headerControls, eventsControls]);
+        setEvents(events);
+    }, [isHeaderInView, isEventsInView, headerControls, eventsControls, events]);
 
     const staggerContainer = {
         hidden: { opacity: 0 },
