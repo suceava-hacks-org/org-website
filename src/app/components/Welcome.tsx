@@ -38,7 +38,7 @@ export default function Welcome() {
         }}
         className="text-xl md:text-2xl"
       >
-        Suceava Hacks is a non-profit organization that aims to ignite the creative potential in every young developer.
+        Suceava Hacks is a student led for students community that aims to bring together students passionate about technology and innovation.
       </motion.p>
     </div>
   );
