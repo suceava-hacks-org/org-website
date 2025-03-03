@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Providers} from "../app/providers";
+import { Providers } from "../app/providers";
 import MouseEffect from "./components/MouseEffect";
 import Navbar from "@/app/components/Navbar";
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="dark">
       <body className={`antialiased`}>
         <Providers>
           <Navbar />

@@ -1,9 +1,8 @@
 "use client"
-import { motion, useInView, AnimatePresence, useScroll, useTransform } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function OurMission() {
-    const [activeCard, setActiveCard] = useState<number | null>(null);
     const containerRef = useRef(null);
     const titleRef = useRef(null);
     const subtitleRef = useRef(null);
@@ -21,18 +20,11 @@ export default function OurMission() {
     
     const isTitleInView = useInView(titleRef, { once: true, amount: 0.7 });
     const isSubtitleInView = useInView(subtitleRef, { once: true, amount: 0.7 });
-    const isDescriptionInView = useInView(descriptionRef, { once: true, amount: 0.7 });
+    const isDescriptionInView = useInView(descriptionRef, { once: true, amount: 0.7 })
     const isCardsInView = useInView(cardsRef, { once: true, amount: 0.3 });
     const isCtaInView = useInView(ctaRef, { once: true, amount: 0.7 });
     const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
     
-    const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
-    
-    useEffect(() => {
-        return () => {
-            if (hoverTimeout) clearTimeout(hoverTimeout);
-        };
-    }, [hoverTimeout]);
     
     const cardVariants = {
         hidden: { y: 50, opacity: 0 },
@@ -209,16 +201,6 @@ export default function OurMission() {
                                 variants={cardVariants}
                                 initial="hidden"
                                 animate={isCardsInView ? "visible" : "hidden"}
-                                onMouseEnter={() => {
-                                    if (hoverTimeout) clearTimeout(hoverTimeout);
-                                    setActiveCard(index);
-                                }}
-                                onMouseLeave={() => {
-                                    const timeout = setTimeout(() => {
-                                        setActiveCard(null);
-                                    }, 300);
-                                    setHoverTimeout(timeout);
-                                }}
                                 className="group h-full"
                             >
                                 <div 
@@ -231,8 +213,7 @@ export default function OurMission() {
                                                     {card.icon}
                                                 </div>
                                             </div>
-
-                                            <span className="text-xs text-gray-400 uppercase tracking-wider font-medium">
+                                            <span className="text-xs text-gray-400 uppercecase tracking-wider font-medium">
                                                 {card.eyebrow}
                                             </span>
                                         </div>

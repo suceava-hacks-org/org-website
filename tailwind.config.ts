@@ -9,12 +9,11 @@ export default {
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
+    extend: {},
   },
-  plugins: [heroui()],
+  darkMode: "class",
+  plugins: [heroui({
+    defaultTheme: "dark",
+    defaultExtendTheme: "dark"
+  })],
 } satisfies Config;

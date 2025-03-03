@@ -1,18 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 export default function Welcome() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    return null;
-  }
-
   return (
     <div className="flex items-center h-screen absolute inset-0 z-10 px-6">
       <div className="w-full max-w-6xl mx-auto">
