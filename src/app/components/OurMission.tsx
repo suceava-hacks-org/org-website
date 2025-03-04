@@ -33,7 +33,7 @@ export default function OurMission() {
             opacity: 1,
             transition: { 
                 type: "tween", 
-                duration: 0.5,
+                duration: 0.3,
                 delay: i * 0.3
             }
         })
@@ -45,7 +45,7 @@ export default function OurMission() {
             y: 0, 
             opacity: 1,
             transition: { 
-                duration: 0.7,
+                duration: 0.3,
                 delay: i * 0.2
             }
         })
@@ -55,7 +55,6 @@ export default function OurMission() {
 
     return (
         <div className="relative overflow-hidden pb-40 pt-32" ref={containerRef}>
-            {/* Simplified background with fewer elements and animations */}
             <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
                 <motion.div 
                     className="absolute top-1/4 left-1/4 w-1/3 h-1/3 bg-gradient-to-r from-red-500 to-rose-500 rounded-full filter blur-[120px]"
@@ -69,7 +68,7 @@ export default function OurMission() {
                     ref={titleRef}
                     initial={{ opacity: 0, y: 30 }}
                     animate={isTitleInView ? 
-                        { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" }} : 
+                        { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" }} : 
                         { opacity: 0, y: 30 }
                     }
                     className="text-center mb-24"
@@ -85,7 +84,7 @@ export default function OurMission() {
                                 className="absolute inset-x-0 bottom-0 h-[3px] bg-gradient-to-r from-red-600 to-rose-500"
                                 initial={{ width: "0%", left: "50%" }}
                                 animate={isTitleInView ? { width: "100%", left: "0%" } : {}}
-                                transition={{ delay: 0.5, duration: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
                             />
                         </span>
                     </h2>
@@ -95,7 +94,7 @@ export default function OurMission() {
                         className="text-xl sm:text-2xl font-light text-gray-300/90 mt-8 max-w-3xl mx-auto leading-relaxed"
                         initial={{ opacity: 0, y: 20 }}
                         animate={isSubtitleInView ? 
-                            { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.3 }} : 
+                            { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.3 }} : 
                             { opacity: 0, y: 20 }
                         }
                     >
@@ -112,7 +111,7 @@ export default function OurMission() {
                     className="mb-32 text-center relative"
                     initial={{ opacity: 0 }}
                     animate={isDescriptionInView ? 
-                        { opacity: 1, transition: { duration: 1 }} : 
+                        { opacity: 1, transition: { duration: 0.5 }} : 
                         { opacity: 0 }
                     }
                 >
@@ -120,7 +119,7 @@ export default function OurMission() {
                         className="text-xl sm:text-2xl font-light text-gray-100/90 mb-10 max-w-3xl mx-auto leading-relaxed"
                         initial={{ y: 30, opacity: 0 }}
                         animate={isDescriptionInView ? 
-                            { y: 0, opacity: 1, transition: { duration: 0.8, delay: 0.2 }} : 
+                            { y: 0, opacity: 1, transition: { duration: 0.4, delay: 0.2 }} : 
                             { y: 30, opacity: 0 }
                         }
                     >
@@ -133,7 +132,7 @@ export default function OurMission() {
                         className="text-lg text-gray-400/90 max-w-2xl mx-auto leading-relaxed"
                         initial={{ y: 30, opacity: 0 }}
                         animate={isDescriptionInView ? 
-                            { y: 0, opacity: 1, transition: { duration: 0.8, delay: 0.4 }} : 
+                            { y: 0, opacity: 1, transition: { duration: 0.4, delay: 0.4 }} : 
                             { y: 30, opacity: 0 }
                         }
                     >
@@ -146,7 +145,7 @@ export default function OurMission() {
                         className="w-24 h-1 bg-gradient-to-r from-red-600 to-rose-500 mx-auto mt-12"
                         initial={{ width: 0 }}
                         animate={isDescriptionInView ? { width: 96 } : { width: 0 }}
-                        transition={{ delay: 0.6, duration: 1 }}
+                        transition={{ delay: 0.3, duration: 0.5 }}
                     />
                 </motion.div>
                 
@@ -154,7 +153,7 @@ export default function OurMission() {
                     <motion.h3
                         className="text-center text-xl uppercase font-medium tracking-wider text-gray-400 mb-12"
                         initial={{ opacity: 0 }}
-                        animate={isCardsInView ? { opacity: 1, transition: { duration: 0.8 }} : { opacity: 0 }}
+                        animate={isCardsInView ? { opacity: 1, transition: { duration: 0.4 }} : { opacity: 0 }}
                     >
                         Our Core <span className="text-red-500">Values</span>
                     </motion.h3>
@@ -246,7 +245,7 @@ export default function OurMission() {
                     className="mb-32 relative"
                     initial={{ opacity: 0 }}
                     animate={isStatsInView ? 
-                        { opacity: 1, transition: { duration: 0.8 }} : 
+                        { opacity: 1, transition: { duration: 0.3 }} : 
                         { opacity: 0 }
                     }
                 >
@@ -294,7 +293,7 @@ export default function OurMission() {
                     className="relative"
                     initial={{ opacity: 0, y: 30 }}
                     animate={isCtaInView ? 
-                        { opacity: 1, y: 0, transition: { duration: 1 }} : 
+                        { opacity: 1, y: 0, transition: { duration: 0.1 }} : 
                         { opacity: 0, y: 30 }
                     }
                 >
@@ -319,7 +318,7 @@ export default function OurMission() {
                                 className="flex flex-col sm:flex-row justify-center items-center gap-4"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={isCtaInView ? { opacity: 1, y: 0 } : {}}
-                                transition={{ delay: 0.7, duration: 0.8 }}
+                                transition={{ delay: 0.1, duration: 0.4 }}
                             >
                                 <button className="px-8 py-3 bg-gradient-to-r from-red-600 to-rose-600 text-white font-semibold rounded-xl shadow-lg shadow-red-900/20">
                                     Get Started Today
@@ -334,7 +333,7 @@ export default function OurMission() {
                                 className="mt-16 flex flex-wrap justify-center items-center gap-4 opacity-70"
                                 initial={{ opacity: 0 }}
                                 animate={isCtaInView ? { opacity: 0.7 } : {}}
-                                transition={{ delay: 0.9, duration: 0.8 }}
+                                transition={{ delay: 0.1, duration: 0.4 }}
                             >
                                 <span className="text-sm text-gray-400 mr-3">Joined by students from:</span>
                                 {["Local High School", "Tech College", "Science School", "Arts Academy", "Vocational School"].map((school, index) => (
