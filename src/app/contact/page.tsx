@@ -96,7 +96,6 @@ export default function Contact() {
             [name]: value
         }));
         
-        // Clear error when user types
         if (errors[name as keyof FormErrors]) {
             setErrors(prev => ({
                 ...prev,
@@ -135,7 +134,6 @@ export default function Contact() {
         
         setIsSubmitting(true);
         
-        // Simulate API call
         setTimeout(() => {
             setIsSubmitting(false);
             setIsSubmitted(true);
@@ -146,7 +144,6 @@ export default function Contact() {
                 message: ""
             });
             
-            // Reset submission status after 5 seconds
             setTimeout(() => {
                 setIsSubmitted(false);
             }, 5000);
@@ -430,8 +427,8 @@ export default function Contact() {
                                         </div>
                                         <div>
                                             <h3 className="text-gray-300 font-semibold">Email</h3>
-                                            <a href="mailto:contact@suceavahacks.org" className="text-red-400 hover:text-red-300 transition-colors duration-300">
-                                                contact@suceavahacks.org
+                                            <a href="mailto:suceava.hackclub@protonmail.com" className="text-red-400 hover:text-red-300 transition-colors duration-300">
+                                                suceava.hackclub@protonmail.com
                                             </a>
                                         </div>
                                     </div>
@@ -459,8 +456,7 @@ export default function Contact() {
                                         <div>
                                             <h3 className="text-gray-300 font-semibold">Address</h3>
                                             <p className="text-gray-400">
-                                                asdad<br />
-                                                1sdasd<br />
+                                                Strada Mihai Viteazul, nr. 24<br />
                                                 Suceava, 720229, Romania
                                             </p>
                                         </div>

@@ -45,42 +45,10 @@ export default function Register() {
     const [events, setEvents] = useState<Event[]>([
         {
             id: "1",
-            title: "Web Development Workshop",
-            date: "March 10, 2025",
+            title: "Intro to Github and web development",
+            date: "April 12, 2025",
             time: "14:00 - 17:00",
-            location: "Campus Lab 204",
-            category: "workshop"
-        },
-        {
-            id: "2",
-            title: "AI Hackathon",
-            date: "March 25-26, 2025",
-            time: "09:00 - 21:00",
-            location: "Innovation Hub",
-            category: "hackathon"
-        },
-        {
-            id: "3",
-            title: "Tech Industry Mixer",
-            date: "April 5, 2025",
-            time: "18:00 - 21:00",
-            location: "Student Union",
-            category: "networking"
-        },
-        {
-            id: "4",
-            title: "Game Development Workshop",
-            date: "April 15, 2025",
-            time: "15:00 - 18:00",
-            location: "Media Lab",
-            category: "workshop"
-        },
-        {
-            id: "5",
-            title: "Open Source Contribution Day",
-            date: "April 20, 2025",
-            time: "10:00 - 16:00",
-            location: "Remote (Online)",
+            location: "CNPRSV - CDI",
             category: "workshop"
         },
     ]);

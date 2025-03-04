@@ -23,60 +23,15 @@ export default function Events() {
     const [events, setEvents] = useState<Event[]>([
         {
             id: "1",
-            title: "Web Development Workshop",
-            date: "March 10, 2025",
+            title: "Intro to Github and web development",
+            date: "April 12, 2025",
             time: "14:00 - 17:00",
-            location: "Campus Lab 204",
-            description: "Learn the fundamentals of web development with HTML, CSS, and JavaScript. Perfect for beginners looking to build their first website.",
+            location: "CNPRSV - CDI",
+            description: "Learn the fundamentals of web development with HTML. Share your site out in the world to get $5 for buying yourself boba.",
             image: "/images/web-dev-workshop.jpg",
             category: "workshop",
             featured: true,
-            registrationLink: "https://example.com/register"
-        },
-        {
-            id: "2",
-            title: "AI Hackathon",
-            date: "March 25-26, 2025",
-            time: "09:00 - 21:00",
-            location: "Innovation Hub",
-            description: "A 48-hour hackathon focused on AI solutions. Form teams, build projects, and compete for prizes!",
-            image: "/images/ai-hackathon.jpg",
-            category: "hackathon",
-            featured: true,
-            registrationLink: "https://example.com/register"
-        },
-        {
-            id: "3",
-            title: "Tech Industry Mixer",
-            date: "April 5, 2025",
-            time: "18:00 - 21:00",
-            location: "Student Union",
-            description: "Network with representatives from top tech companies. Bring your resume and business cards!",
-            image: "/images/tech-mixer.jpg",
-            category: "networking",
-            registrationLink: "https://example.com/register"
-        },
-        {
-            id: "4",
-            title: "Game Development Workshop",
-            date: "April 15, 2025",
-            time: "15:00 - 18:00",
-            location: "Media Lab",
-            description: "Introduction to Unity game development. Create your first 2D game in this hands-on workshop.",
-            image: "/images/game-dev.jpg",
-            category: "workshop",
-            registrationLink: "https://example.com/register"
-        },
-        {
-            id: "5",
-            title: "Open Source Contribution Day",
-            date: "April 20, 2025",
-            time: "10:00 - 16:00",
-            location: "Remote (Online)",
-            description: "Learn how to contribute to open source projects. Mentors will guide you through your first contributions.",
-            image: "/images/open-source.jpg",
-            category: "workshop",
-            registrationLink: "https://example.com/register"
+            registrationLink: "https://suceava.hackclub.com/register"
         },
     ]);
 
