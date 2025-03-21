@@ -1,3 +1,5 @@
+This repository is now in archive. There is a new one regarding the club's website, check it on https://github.com/suceava-hacks-org.
+--
 # Hack Club Suceava Website
 
 The main website regarding the Hack Club.
